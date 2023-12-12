@@ -91,7 +91,7 @@ Please modify the following shell command appropriately:
 
 ## 5. test
 - We evaluate the test set to obtain **precision**, **recall** and **F1**. When testing, please ensure that the mean and std of the corresponding data set are used during training. 
-We use [calc_dataset_mean_std.py](calc_dataset_mean_std.py) to calculate the mean of the training set. and std. Start testing by:
+We use [calc_dataset_mean_std.py](calc_dataset_mean_std.py) to calculate the mean and std of the training set. Start testing by:
 	```shell
 	python test.py --ckpt_url ${model_path} --data_path ${test_data_path}
 	```
